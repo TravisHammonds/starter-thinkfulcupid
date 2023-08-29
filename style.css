@@ -65,6 +65,12 @@ header {
   color: #ecdbc9;
 }
 
+header nav ul{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
 header nav ul li {
   list-style-type: none;
 }
@@ -81,6 +87,9 @@ header nav ul li a:hover {
 }
 
 /* -------  Join Form ------- */
+#join img{
+  width: 100%;
+}
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
@@ -105,6 +114,30 @@ form button {
   width: 100%;
 }
 
+.join-container {
+  display: flex; 
+  justify-content: space-between;
+}
+
+/* -------  About ------- */
+.content-img {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------  Download ------- */
+
+
+
+/* -------  Blog ------- */
+
+
+
 /* -------  Footer ------- */
 
 footer {
@@ -118,3 +151,64 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and  (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav {
+    margin-top: 10px; 
+  }
+
+  #join {
+    display: flex; 
+  }
+
+  #join img {
+    width: 60%;
+    margin-right: 20px;
+  }
+
+  .join-content{
+    margin-top: 30px; 
+  }
+  
+ .container {
+  flex-direction: row; 
+ }
+
+ .content-img {
+  width: 30%;
+  margin: 10px; 
+ }
+
+ .download-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+ }
+
+ #blog .container {
+    flex-direction: column;;
+ }
+
+ .blog-post{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 10px;
+ }
+
+ .blog-post img {
+  width: 100%;
+ }
+ .blog-container {
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+
+}
