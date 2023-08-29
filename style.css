@@ -176,23 +176,26 @@ footer p {
   }
 
   .join-content{
-    margin-top: 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%; 
   }
   
+  form {
+    width: 80%;
+  }
+
  .container {
   flex-direction: row; 
+  align-items: center;
  }
 
  .content-img {
   width: 22%;
   height: 15%;
   margin: 10px; 
- }
-
- #id div p {
-  padding-top: 10px;
-  line-height: 0;
-  font-size: 7px; 
  }
 
  .download-container {
@@ -214,6 +217,7 @@ footer p {
 
  .blog-post img {
   width: 100%;
+  height: auto; 
  }
  .blog-container {
   display: flex; 
