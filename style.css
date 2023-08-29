@@ -153,6 +153,10 @@ footer p {
 /* -------  Media Query ------- */
 
 @media all and  (min-width: 768px) {
+
+  p {
+    line-height: 1rem;
+  }
   .nav {
     display: flex;
     justify-content: space-between;
@@ -180,8 +184,15 @@ footer p {
  }
 
  .content-img {
-  width: 30%;
+  width: 22%;
+  height: 15%;
   margin: 10px; 
+ }
+
+ #id div p {
+  padding-top: 10px;
+  line-height: 0;
+  font-size: 7px; 
  }
 
  .download-container {
