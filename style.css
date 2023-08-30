@@ -154,9 +154,6 @@ footer p {
 
 @media all and  (min-width: 768px) {
 
-  p {
-    line-height: 1rem;
-  }
   .nav {
     display: flex;
     justify-content: space-between;
@@ -185,6 +182,10 @@ footer p {
   
   form {
     width: 80%;
+  }
+
+  form div input {
+    width: 40%;
   }
 
  .container {
